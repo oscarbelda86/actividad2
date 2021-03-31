@@ -1,0 +1,10 @@
+"use strict";
+var formulario = document.getElementById("formulario");
+var nombre = document.getElementById("nombre");
+var apellidos = document.getElementById("apellidos");
+var rut = document.getElementById("rut");
+var email = document.getElementById("email");
+var telefono = document.getElementById("telefono");
+var descripcion = document.getElementById("descripcion");
+formulario.addEventListener("submit");
+formulario.addEventListener("limpiar");
