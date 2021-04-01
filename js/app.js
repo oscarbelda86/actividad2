@@ -6,5 +6,15 @@ var rut = document.getElementById("rut");
 var email = document.getElementById("email");
 var telefono = document.getElementById("telefono");
 var descripcion = document.getElementById("descripcion");
-formulario.addEventListener("submit");
-formulario.addEventListener("limpiar");
+function checkinputtelefono() {
+    if (telefono.length != 9) {
+        alert("inserte un numero de 9 digitos");
+    }
+}
+checkinputtelefono();
+formulario.addEventListener("submit", function (evento) {
+    alert("Hemos recibido sus datos, pronto nos estaremos comunicando con usted.");
+});
+function limpiarDatos() {
+    alert("apretaste limpar datos");
+}

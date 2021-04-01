@@ -26,7 +26,7 @@
                 </li>
                 <li>
                      <label for="rut">RUT</label>
-                     <input id="rut" type="text" placeholder="RUT" required/>
+                     <input id="rut" type="text" placeholder="RUT" required pattern="^\d{1,2}\d{3}\d{3}[-][0-9kK]{1}$"/>
                 </li>
                 <li> 
                  <label for="email">Correo Electrónico</label>
@@ -72,7 +72,7 @@
    
                 <li class='button'>
                       <button type="submit">Enviar</button>
-                      <button id="limpiar">Limpiar</button>
+                      <button id="limpiar" onclick="limpiarDatos()">Limpiar</button>
                 </li>
    
           </ul>

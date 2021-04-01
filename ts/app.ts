@@ -6,6 +6,19 @@ let email:any=document.getElementById("email");
 let telefono:any=document.getElementById("telefono");
 let descripcion:any=document.getElementById("descripcion");
 
-formulario.addEventListener("submit",)
+function checkinputtelefono(){
+    if (telefono.length != 9){
+        alert("inserte un numero de 9 digitos")
+    }
+}
+checkinputtelefono();
 
-formulario.addEventListener("limpiar",)
+formulario.addEventListener("submit",function(evento:any){
+    alert("Hemos recibido sus datos, pronto nos estaremos comunicando con usted.");
+})
+
+function limpiarDatos(){
+    
+
+    alert("apretaste limpar datos");
+}
