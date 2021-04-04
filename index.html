@@ -17,7 +17,7 @@
             <span id="mensaje"></span>
             <ul>
                 <li>
-                     <label for="nombre">Nombre Completo</label>
+                     <label for="nombre">Nombre</label>
                      <input id="nombre" type="text" placeholder="Nombre" required/>
                 </li>
                 <li>
@@ -35,7 +35,7 @@
              
               <li> 
                  <label for="telefono">Telefono</label>
-                     <input id="telefono" type="number" placeholder="Telefono" required />
+                     <input id="telefono" type="number" placeholder="Telefono" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "9" required />
                 </li>
    
                 <li>
